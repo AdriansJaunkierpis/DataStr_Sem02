@@ -15,6 +15,13 @@ public class MainService {
 			stringList.print();
 			stringList.add("Karlis", 2);
 			stringList.print();
+			
+			stringList.remove(0);
+			stringList.print();
+			stringList.remove(1);
+			stringList.print();
+			stringList.remove(1);
+			stringList.print();
 		} catch(Exception e) {
 			System.out.println(e);
 		}

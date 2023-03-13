@@ -31,7 +31,8 @@ public class MyLinkedList<T> {
 		//add at the beginning
 		if (position == 0) {
 			MyNode<T> newNode = new MyNode<T>(newElement);
-			first.setNext(first);
+			first.setPrev(newNode);
+			newNode.setNext(first);
 			first = newNode;
 			elementCounter++;
 		}
