@@ -56,4 +56,13 @@ public class MyLinkedList<T> {
 			elementCounter++;
 		}
 	}
+	public void print() {
+		//TODO verify not empty
+		MyNode tempNode = first;
+		while (tempNode != null) {
+			System.out.print(tempNode.getElement() + " ");
+			tempNode.getNext();
+		}
+		System.out.println();
+	}
 }
